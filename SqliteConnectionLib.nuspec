@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>SqliteConnectionLib</id>
+    <version>1.0.0</version>
+    <authors>Moussa Salisou</authors>
+    <owners>Moussa Salisou</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <description>Una libreria che fornisce un'interfaccia semplice per connettersi e gestire un database SQLite.</description>
+    <releaseNotes>Prima versione della libreria per la connessione a SQLite</releaseNotes>
+    <tags>sqlite;database;connection</tags>
+    <projectUrl>https://github.com/salisou/SqliteConnectionLib.git</projectUrl>
+  </metadata>
+  <files>
+    <file src="bin/Debug/net8.0/SqliteConnectionLib.dll" target="lib/net8.0/" />
+  </files>
+</package>
