@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>SqliteConnectionLib</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>Moussa Salisou</authors>
     <owners>Moussa Salisou</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
