@@ -1,34 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Authors>Moussa Salisou</Authors>
-	<PackageId>SqliteConnectionLib</PackageId>
-	<Version>1.0.0</Version>
-	<Description>Una libreria che fornisce un'interfaccia semplice per connettersi e gestire un database SQLite.</Description>
-	<PackageTags>sqlite;database;connection</PackageTags>
-	<RepositoryUrl>https://github.com/salisou/SqliteConnectionLib.git</RepositoryUrl>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Moussa Salisou</Authors>
+		<PackageId>SqliteConnectionLib</PackageId>
+		<Version>1.0.2</Version>
+		<!-- Modifica la versione se necessario -->
+		<Description>Una libreria che fornisce un'interfaccia semplice per connettersi e gestire un database SQLite.</Description>
+		<PackageTags>sqlite;database;connection</PackageTags>
+		<RepositoryUrl>https://github.com/salisou/SqliteConnectionLib.git</RepositoryUrl>
+		<!-- Aggiungi il file README -->
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<!-- Assicurati che README.md esista nel progetto -->
+	</PropertyGroup>
 
-  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.92" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.92" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
-    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Update=".gitignore">
+			<Generator>TextTemplatingFileGenerator</Generator>
+			<LastGenOutput>.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Update=".gitignore">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
+	<!-- Questo potrebbe essere rimosso se non necessario -->
+	<!-- <ItemGroup>
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
-  </ItemGroup>
+  </ItemGroup> -->
 
 </Project>
